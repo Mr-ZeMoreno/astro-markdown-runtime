@@ -1,5 +1,7 @@
 # Astro Markdown Runtime
 
+[Go to Repository](https://github.com/Mr-ZeMoreno/astro-markdown-runtime/actions)
+
 Render Markdown **at runtime** in Astro using a custom AST pipeline that turns Markdown directives into real Astro components.
 
 Built for projects that need **dynamic Markdown rendering** without relying on build-time compilation.
