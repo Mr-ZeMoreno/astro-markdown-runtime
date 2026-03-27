@@ -1,0 +1,44 @@
+---
+import type { AstroNode } from "../types";
+
+interface Props {
+    node: AstroNode;
+}
+
+const { node } = Astro.props;
+---
+
+{node.type === "text" && <Fragment>{node.value}</Fragment>}
+
+{
+    node.type === "root" &&
+        node.children.map((child) => <Astro.self node={child} />)
+}
+
+{
+    node.type === "component" &&
+        (() => {
+            const { Component, props, children } = node;
+            return (
+                <Component {...props}>
+                    {children.map((child) => (
+                        <Astro.self node={child} />
+                    ))}
+                </Component>
+            );
+        })()
+}
+
+{
+    node.type === "element" &&
+        (() => {
+            const { tag: Tag, props, children } = node;
+            return (
+                <Tag {...props}>
+                    {children.map((child) => (
+                        <Astro.self node={child} />
+                    ))}
+                </Tag>
+            );
+        })()
+}

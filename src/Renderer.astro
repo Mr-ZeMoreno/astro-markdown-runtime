@@ -1,0 +1,16 @@
+---
+import NodeRenderer from "./components/NodeRenderer.astro";
+import type { ComponentRecord } from "./types";
+import { processMarkdown } from "./scripts";
+
+interface Props {
+    text: string;
+    components?: ComponentRecord;
+}
+
+const { text, components } = Astro.props;
+
+const astroast = await processMarkdown(text, components || {});
+---
+
+<NodeRenderer node={astroast} />
