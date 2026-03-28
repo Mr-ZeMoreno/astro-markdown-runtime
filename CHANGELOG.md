@@ -1,5 +1,11 @@
 # @ze-moreno/astro-markdown-runtime
 
+## 1.2.0
+
+### Minor Changes
+
+- Update astro version
+
 ## 1.1.2
 
 ### Patch Changes
