@@ -42,4 +42,4 @@ jobs:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
 
-      - run: pnpm publish
+      - run: pnpm publish --access public
