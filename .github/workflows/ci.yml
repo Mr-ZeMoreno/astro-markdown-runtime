@@ -3,9 +3,6 @@ name: CI
 on:
   push:
     branches: [main]
-  # Publicar solo cuando se cree un tag semántico
-  tags:
-    - 'v*.*.*'
 
 jobs:
   lint:
