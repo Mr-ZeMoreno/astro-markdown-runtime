@@ -1,6 +1,10 @@
 # Astro Markdown Runtime
 
-[Go to Repository](https://github.com/Mr-ZeMoreno/astro-markdown-runtime/actions)
+[![npm version](https://img.shields.io/npm/v/%40ze-moreno%2Fastro-markdown-runtime)](https://www.npmjs.com/package/@ze-moreno/astro-markdown-runtime)
+[![npm downloads](https://img.shields.io/npm/dm/%40ze-moreno%2Fastro-markdown-runtime)](https://www.npmjs.com/package/@ze-moreno/astro-markdown-runtime)
+[![Astro](https://img.shields.io/badge/Astro-compatible-BC52EE)](https://astro.build)
+[![ISC License](https://img.shields.io/badge/license-ISC-8cf2b0)](./License.md)
+[![CI](https://github.com/Mr-ZeMoreno/astro-markdown-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/Mr-ZeMoreno/astro-markdown-runtime/actions/workflows/ci.yml)
 
 Render Markdown **at runtime** in Astro using a custom AST pipeline that turns Markdown directives into real Astro components.
 
